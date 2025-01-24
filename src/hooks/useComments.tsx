@@ -68,12 +68,10 @@ export const CommentsProvider: React.FC<{ children: React.ReactNode }> = ({
     const updatedComments = comments.filter((comment) => comment.id !== id);
     setComments(updatedComments);
     saveToLocalStorage("comments", updatedComments);
-    console.log(comments);
   };
 
   const editComment = (id: number) => {
     const selectedComment = comments.find((comment) => comment.id === id);
-    console.log("selectedComment", selectedComment);
     if (selectedComment) {
       setCurrentComment(selectedComment);
     }
