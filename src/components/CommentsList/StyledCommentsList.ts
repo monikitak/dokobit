@@ -64,4 +64,8 @@ export const StyledButton = styled.button`
   padding: 2px;
   border-radius: 50%;
   background-color: #ff8b00;
+  &:disabled {
+    background-color: #9d9d9d;
+    cursor: not-allowed;
+  }
 `;

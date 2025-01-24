@@ -56,8 +56,10 @@ export const StyledActions = styled.div`
   display: flex;
   gap: 12px;
   img {
-    display: none;
     cursor: pointer;
+    @media (min-width: 576px) {
+      display: none;
+    }
   }
 `;
 
